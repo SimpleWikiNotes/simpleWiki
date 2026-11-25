@@ -16,6 +16,9 @@
     })(document.documentElement);
   </script>
   {% seo title=false %}
+  {%- if page.hidden %}
+  <meta name="robots" content="noindex, nofollow">
+  {%- endif %}
   <title>{% if page.title and page.ref != 'index' %}{{ page.title }} · {% endif %}{{ t.site_title | default: site.title }}</title>
   {%- if page.ref -%}{%- assign siblings = site.pages | where: "ref", page.ref -%}{%- for p in siblings %}
   <link rel="alternate" hreflang="{{ p.lang }}" href="{{ p.url | absolute_url }}">
