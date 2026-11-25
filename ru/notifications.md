@@ -70,12 +70,12 @@ nav_order: 4
 > **Интеграция с FCM**
 >
 > Для работы уведомлений **необходимо подключать сервисные аккаунты**  
-> `marla-export@marfa-290610.iam.gserviceaccount.com` и `iosandroidpushes@iosandroidpushes.iam.gserviceaccount.com` к проекту Firebase через Google Cloud Platform с ролью `Basic → Owner`. Для этого надо:
+> `marla-export@marfa-290610.iam.gserviceaccount.com` и `iosandroidpushes@iosandroidpushes.iam.gserviceaccount.com` к проекту Firebase через Google Cloud Platform с ролью `Basic → Additional roles → Owner (Legacy)`. Для этого надо:
 >
 > - перейти в пункт `Users and permissions` в настройках проекта Firebase
 > - нажать на ссылку `Advanced permission settings` внизу страницы, чтобы перейти в Google Cloud Platform к соответствующему проекту
 > - нажать кнопку `+ Add` для добавления нового пользователя
-> - добавить сервисный аккаунт `marla-export@marfa-290610.iam.gserviceaccount.com` и `iosandroidpushes@iosandroidpushes.iam.gserviceaccount.com` и указать уровень доступа `Owner` в категории `Basic`
+> - добавить сервисный аккаунт `marla-export@marfa-290610.iam.gserviceaccount.com` и `iosandroidpushes@iosandroidpushes.iam.gserviceaccount.com` и указать роль `Owner (Legacy)`: выбрать категорию `Basic`, нажать `Show additional roles` и в разделе `Additional roles` выбрать `Owner (Legacy)`
 > - сохранить изменения нажатием кнопки `Save`
 {: .callout .info}
 

@@ -70,12 +70,12 @@ Notifications must support images
 > **FCM integration**
 >
 > For notifications to work, **the service accounts must be added**  
-> `marla-export@marfa-290610.iam.gserviceaccount.com` and `iosandroidpushes@iosandroidpushes.iam.gserviceaccount.com` to the Firebase project via Google Cloud Platform with the `Basic → Owner` role. To do this:
+> `marla-export@marfa-290610.iam.gserviceaccount.com` and `iosandroidpushes@iosandroidpushes.iam.gserviceaccount.com` to the Firebase project via Google Cloud Platform with the `Basic → Additional roles → Owner (Legacy)` role. To do this:
 >
 > - open `Users and permissions` in the Firebase project settings
 > - click the `Advanced permission settings` link at the bottom of the page to go to the corresponding project in Google Cloud Platform
 > - click `+ Add` to add a new user
-> - add the service accounts `marla-export@marfa-290610.iam.gserviceaccount.com` and `iosandroidpushes@iosandroidpushes.iam.gserviceaccount.com` and set the access level to `Owner` in the `Basic` category
+> - add the service accounts `marla-export@marfa-290610.iam.gserviceaccount.com` and `iosandroidpushes@iosandroidpushes.iam.gserviceaccount.com` and assign the `Owner (Legacy)` role: select the `Basic` category, click `Show additional roles`, and choose `Owner (Legacy)` under `Additional roles`
 > - save the changes by clicking `Save`
 {: .callout .info}
 
